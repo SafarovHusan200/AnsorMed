@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px auto;
+    position: fixed;
+    background-color: white;
+    z-index: 99;
+    margin-top: 0;
+}
+header .logo-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo-brand img{
+    width: 50px;
+}
+header h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 16px;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header .navbar a{
+    text-decoration: none;
+    color: black;
+    margin: 0 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+}
+.btn{
+
+    border-radius: 8px;
+    background-color: #DE2E54;
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero{
+    display: block;
+    padding-top: 200px;
+    width: 100%;
+    background-color: #0EB4C1;
+    padding: 20px 0;
+}
+.hero .row{
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.hero h2{
+    color: white;
+    font-weight: 700;
+    line-height: 43px;
+    font-size: 36px;
+    word-spacing: 0px;
+    letter-spacing: -1px;
+}
+.hero p{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 16px;
+    margin-bottom: 36px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    max-width: 500px;
+}
+
+/* Xizmatlar */
+.services{
+    width: 100%;
+    margin: 50px auto;
+    padding: 25px 0;
+}
+.services .container{
+    flex-direction: column;
+}
+.services .container h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.services .container .row{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 15px 0;
+}
+.services .container .row .col{
+    margin: 0 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+
+}
+.services .container .row .col:nth-of-type(2){
+    
+    padding-top: 25px;
+}
+.services .container .row .col h3{
+    margin: 15px 0;
+    font-weight: 700;
+}
+.services .container .row .col p{
+    line-height: 24px;
+    color: #444444;
+    font-weight: 400;
+}
+
+/* Qabul */
+.contact{
+    width: 100%;
+    background-color: #0EB4C1;
+    padding: 35px 0;
+}
+.contact .container{
+    flex-direction: column;
+}
+.contact h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 25px;
+    color: white;
+}
+.contact .contact-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .contact-item a{
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background: #222222;
+    color: white;
+    padding: 20px 0;
+}
+footer .logo-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .logo-brand h3{
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 24px;
+}
+footer .navbar{
+    flex-direction: row;
+}
+footer .navbar a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 16px;
+}
+
+.menu{
+    display: none;
+}
+.menu-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-navbar .navbar{
+    display: flex;
+    flex-direction: row !important;
+}
+.menu-navbar .navbar a{
+    margin: 0 16px !important;
+}
+
+.menu-navbar .login{
+    margin-left: 15px;
+}
+.menu-navbar.active{
+    left: 0;
+}
+.menu-navbar .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px; 
+}
+.menu-navbar .login{
+    display: flex;
+    margin-top: 10px;
+}
+.menu-navbar .navbar a{
+    margin: 7px 0;
+}
+
+.scrollBtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #DE2E54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: -20px;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.scrollBtn.active{
+    right: 10px;
+    bottom: 10px;
+    opacity: 1;
+}
+.scrollBtn i{
+    color: white;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 90%;
+    }
+}
+
+
+@media screen and   (max-width: 992px) {
+    .container{
+        width: 95%;
+    }
+    .menu{
+        display: block;
+    }
+    header .container {
+        /* flex-direction: column; */
+        align-items: flex-start;
+    }
+    header .navbar{
+        display: none;
+    }
+    header .login{
+        display: none;
+    }
+
+    .hero .row{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .hero .row .col img{
+        width: 100%;
+    }
+    .services .container .row{
+        width: 100%;
+    }
+    .services .container .row .col{
+        margin: 0 5px;
+    }
+    .services .container .row .col:nth-of-type(2){
+        padding-top: 5px;
+    }
+    .services .container .row .col h3{
+        margin: 7px 0;
+    }
+    /* Menu */
+    .menu{
+        width: 50px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #DE2E54;
+        border-radius: 8px;
+    }
+    .menu i{
+        color: white;
+        font-size: 25px;
+    }
+    .menu-navbar{
+        display: block;
+        flex-direction: column;
+        margin-top: 25%;
+        position: absolute;
+        padding:20px;
+        background-color: white;
+        left: -100%;
+    }
+    .menu-navbar .navbar{
+        flex-direction: column !important;
+    }
+    .menu-navbar .navbar a{
+        margin: 7px 0 !important;
+    }
+}
+
+@media screen and   (max-width: 786px) {
+    .container{
+        width: 98%;
+    }
+
+    .hero h2, p{
+        padding-left:10px;
+    }
+    .hero button{
+        margin-left: 10px;
+    }
+
+
+}
+
+
+@media screen and   (max-width: 666px){
+    header{
+        margin: 0;
+    }
+    .services .container .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .services .container .row .col:nth-of-type(1){
+        margin-bottom: -20px;
+    }
+    .services .container .row .col:nth-of-type(2){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .services .container .row .col:nth-of-type(2) h3{
+        text-align: center;
+        display: block;
+    }
+    
+    
+
+    .contact .contact-item{
+        flex-direction: column;
+    }
+    footer .container{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+    footer .container .navbar{
+        flex-direction: column;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    footer .container .navbar a{
+        list-style: circle;
+        margin: 5px;
+    }
+}
