@@ -284,7 +284,6 @@ footer .navbar a{
         display: block;
     }
     header .container {
-        /* flex-direction: column; */
         align-items: flex-start;
     }
     header .navbar{
@@ -349,13 +348,6 @@ footer .navbar a{
         width: 98%;
     }
 
-    .hero h2, p{
-        padding-left:10px;
-    }
-    .hero button{
-        margin-left: 10px;
-    }
-
 
 }
 
@@ -363,6 +355,9 @@ footer .navbar a{
 @media screen and   (max-width: 666px){
     header{
         margin: 0;
+    }
+    .container{
+        
     }
     .services .container .row{
         flex-direction: column;
@@ -393,7 +388,7 @@ footer .navbar a{
     footer .container{
         flex-direction: column;
         align-items: flex-start;
-        margin-left: 20px;
+        padding-left: 20px;
     }
     footer .container .navbar{
         flex-direction: column;
